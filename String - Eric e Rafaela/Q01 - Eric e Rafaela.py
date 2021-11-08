@@ -1,0 +1,96 @@
+'''
+Questão 1
+Faça um programa para conjugar verbos regulares (terminados em ar, er e ir), no presente, pretérito perfeito e no futuro do presente. O usuário deve entrar com o verbo no infinitivo pessoal (ex.: amar, beber, partir, etc.). O programa deve verificar se o verbo está no infinitivo, se não estiver deve mandar a mensagem: “O verbo deve estar no infinitivo”, e pedir para o usuário entrar novamente com o verbo. Seu programa deve ler o verbo, mostrar as conjugações nas 3 pessoas do singular e nas 3 pessoas do plural, incluindo os pronomes pessoais (eu, tu, ele, nós, vós, eles). O programa deve terminar quando for digitado a palavra “FIM”. 
+
+'''
+
+#Questão feita por Eric Castellar e Rafaela Bezerra.
+
+i = 0
+while i == 0:
+    verbo = input('Entre com um verbo regular no infinitivo:')
+    termina_em = verbo[-2:]
+    verbo_sl = verbo.strip().lower()[:-2]
+    if termina_em.lower() == 'ar':
+        print()
+        print("Presente do Infinitivo:")
+        print("Eu"+' '+verbo_sl+"o")
+        print("Tu"+' '+verbo_sl+"as")
+        print("Ele"+' '+verbo_sl+"a")
+        print("Nós"+' '+verbo_sl+"amos")
+        print("Vós"+' '+verbo_sl+"ais")
+        print("Eles"+' '+verbo_sl+"am")
+        print()
+        print("Pretérito Perfeito:")
+        print("Eu"+' '+verbo_sl+"ei")
+        print("Tu"+' '+verbo_sl+"aste")
+        print("Ele"+' '+verbo_sl+"ou")
+        print("Nós"+' '+verbo_sl+"amos")
+        print("Vós"+' '+verbo_sl+"astes")
+        print("Eles"+' '+verbo_sl+"aram")
+        print()
+        print("Futuro do Presente:")
+        print("Eu"+' '+verbo_sl+"arei")
+        print("Tu"+' '+verbo_sl+"arás")
+        print("Ele"+' '+verbo_sl+"ará")
+        print("Nós"+' '+verbo_sl+"aremos")
+        print("Vós"+' '+verbo_sl+"areis")
+        print("Eles"+' '+verbo_sl+"arão")
+        print()
+    elif termina_em.lower() == 'er':
+        print()
+        print("Presente do Infinitivo:")
+        print("Eu"+' '+verbo_sl+"o")
+        print("Tu"+' '+verbo_sl+"es")
+        print("Ele"+' '+verbo_sl+"e")
+        print("Nós"+' '+verbo_sl+"emos")
+        print("Vós"+' '+verbo_sl+"eis")
+        print("Eles"+' '+verbo_sl+"em")
+        print()
+        print("Pretérito Perfeito:")
+        print("Eu"+' '+verbo_sl+"i")
+        print("Tu"+' '+verbo_sl+"este")
+        print("Ele"+' '+verbo_sl+"eu")
+        print("Nós"+' '+verbo_sl+"emos")
+        print("Vós"+' '+verbo_sl+"estes")
+        print("Eles"+' '+verbo_sl+"eram")
+        print()
+        print("Futuro do Presente:")
+        print("Eu"+' '+verbo_sl+"erei")
+        print("Tu"+' '+verbo_sl+"erás")
+        print("Ele"+' '+verbo_sl+"erá")
+        print("Nós"+' '+verbo_sl+"eremos")
+        print("Vós"+' '+verbo_sl+"ereis")
+        print("Eles"+' '+verbo_sl+"erão")
+        print()
+    elif termina_em.lower() == 'ir':
+        print()
+        print("Presente do Infinitivo:")
+        print("Eu"+' '+verbo_sl+"o")
+        print("Tu"+' '+verbo_sl+"es")
+        print("Ele"+' '+verbo_sl+"e")
+        print("Nós"+' '+verbo_sl+"imos")
+        print("Vós"+' '+verbo_sl+"is")
+        print("Eles"+' '+verbo_sl+"em")
+        print()
+        print("Pretérito Perfeito:")
+        print("Eu"+' '+verbo_sl+"i")
+        print("Tu"+' '+verbo_sl+"iste")
+        print("Ele"+' '+verbo_sl+"iu")
+        print("Nós"+' '+verbo_sl+"imos")
+        print("Vós"+' '+verbo_sl+"istes")
+        print("Eles"+' '+verbo_sl+"iram")
+        print()
+        print("Futuro do Presente:")
+        print("Eu"+' '+verbo_sl+"irei")
+        print("Tu"+' '+verbo_sl+"irás")
+        print("Ele"+' '+verbo_sl+"irá")
+        print("Nós"+' '+verbo_sl+"iremos")
+        print("Vós"+' '+verbo_sl+"ireis")
+        print("Eles"+' '+verbo_sl+"irão")
+        print()
+    elif verbo.lower() == 'fim':
+            print('Fim do programa')
+            i += 1
+    else:
+        print("O verbo deve estar no infinitivo, digite novamente.")
