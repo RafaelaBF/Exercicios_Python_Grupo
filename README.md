@@ -1,6 +1,6 @@
 # Exercícios de Python🐍
 
-Esse repositório tem como finalidade expor os trabalhos feitos em grupo para disciplina de Algoritmos computacionais e estruturais do CEFET-RJ no ano letivo de 2021.
+Este repositório tem como finalidade expor os trabalhos feitos em grupo para disciplina de Algoritmos computacionais e estruturais do CEFET-RJ no ano letivo de 2021.
 
 ## Ferramentas usadas 🔧
 
